@@ -1,4 +1,4 @@
 <?php
 
 // Content Elements
-$GLOBALS['TL_CTE']['texts']['HlHeadline'] = \JoyIT\ContentElement\HlHeadline::class;
+$GLOBALS['TL_CTE']['texts']['HlHeadline'] = \TestBundle\ContentElement\HlHeadline::class;
