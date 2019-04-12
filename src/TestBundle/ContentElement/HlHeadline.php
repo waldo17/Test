@@ -26,6 +26,13 @@ class HlHeadline extends \ContentElement {
     $this->Template->title      = $this->headline;
     $this->Template->wildcard   = "### ContentProduct ###";
   }
+
+	private function genFeOutput()
+	{
+		if ($this->productproperties != '') {
+				$this->Template->arrProperties = deserialize($this->productproperties, true);
+		}
+	}
 }
 
 class_alias(HlHeadline::class, 'HlHeadline');
